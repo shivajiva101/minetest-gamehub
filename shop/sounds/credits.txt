@@ -1,0 +1,6 @@
+gamehub mod (C) shivajiva101@hotmail.com 2019
+
+This file is part of gamehub mod.
+
+shop_pay.ogg by Butilko CC0-ATTRIBUTION https://freesound.org/s/169146/
+shop_register.ogg by deleted_user_96253 CC0-ATTRIBUTION https://freesound.org/s/351304/

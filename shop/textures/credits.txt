@@ -1,0 +1,7 @@
+gamehub mod (C) shivajiva101@hotmail.com 2019
+
+This file is part of gamehub.
+
+shop_button.png CC0 https://www.kisscc0.com/clipart/computer-icons-download-kiosk-document-shop-front-rvaes5/
+shop_treasure.png CC0 https://www.kisscc0.com/clipart/coin-philippine-peso-money-bag-treasure-money-pot-lqs0nw/
+shop_delete.png CC0 https://www.kisscc0.com/clipart/computer-icons-error-message-download-http-404-red-9pr99c/

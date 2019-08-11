@@ -1,0 +1,6 @@
+gamehub mod (C) shivajiva101@hotmail.com 2019
+
+This file is part of gamehub mod.
+
+pad_reward.ogg by syseQ CC0-ATTRIBUTION https://freesound.org/s/267528/
+pad_teleport.ogg by DWOBoyle CC-BY-ATTRIBUTION 3.0 https://freesound.org/s/474180/

@@ -1,0 +1,10 @@
+gamehub mod (C) shivajiva101@hotmail.com 2019
+
+This file is part of gamehub mod.
+
+hub_gpad.png by shivajiva CC Attribution 3.0
+hub_rpad.png by shivajiva CC Attribution 3.0
+hub_bg.png by shivajiva CC Attribution 3.0
+hub_bg2.png by shivajiva CC Attribution 3.0
+hub_egg.png by X-men CC Attribution 3.0
+hub_left_icon.png / hub_right_icon.png 	http://commons.wikimedia.org/wiki/File:Media-playback-start.svg

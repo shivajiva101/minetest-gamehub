@@ -1,0 +1,11 @@
+
+gamehub mod (C) shivajiva101@hotmail.com 2019
+
+This file is part of gamehub mod.
+
+The example schematics were created in my skyblocks server and
+are provided under CC ATTRIBUTION 3.0
+
+Barnyard created by dman
+BunnyHop created by evilbunny
+X-Men Rooms created by X-men

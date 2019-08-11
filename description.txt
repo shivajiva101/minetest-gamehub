@@ -1,0 +1,1 @@
+Adds a games hub, jail and shop to your world. Load the examples or create your own mini games and share them with the community.
