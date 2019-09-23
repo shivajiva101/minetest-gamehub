@@ -31,8 +31,8 @@ then you can install lsqlite3 with the following command:
 This mod should be added to secure.trusted in your minetest.conf before starting the server.
 ### Privileges
 ```
-hub_admin	-- games admin
-hub_mod	  -- server moderator
+hub_admin   -- games admin
+hub_mod     -- server moderator
 ```
 ### Admin Commands
 ```
@@ -40,14 +40,14 @@ hub_mod	  -- server moderator
 
 Options:
 
-add					  -- display add game form
-delete <area_id> [true]   -- delete a game [remove]
-edit <game>			  -- display form to edit game
-load <name> [new_name]	-- load a saved game [used to duplicate]
-protect <area_id> [true] -- add pclip & kill nodes to an area [remove]
-save <area_id>			-- save a game
-stage		 			-- add a stage destination to a game
-unstage <game> <num> 	-- remove a stage destination
+add                         -- display add game form
+delete <area_id> [true]     -- delete a game [remove]
+edit <game>                 -- display form to edit game
+load <name> [new_name]      -- load a saved game [used to duplicate]
+protect <area_id> [true]    -- add pclip & kill nodes to an area [remove]
+save <area_id>              -- save a game
+stage                       -- add a stage destination to a game
+unstage <game> <num> 	    -- remove a stage destination
 ```
 ### Moderator Commands
 ```
