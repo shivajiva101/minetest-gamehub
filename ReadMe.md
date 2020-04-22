@@ -1,6 +1,9 @@
 ## Gamehub Modpack
 ### for minetest by shivajiva101@hotmail.com
 
+[![Build status](https://github.com/shivajiva101/minetest-gamehub/workflows/Check%20&%20Release/badge.svg)](https://github.com/shivajiva101/minetest-gamehub/actions)
+[![License](https://img.shields.io/badge/license-AGPLv3.0%2B-blue.svg)](https://www.gnu.org/licenses/agpl-3.0.en.html)
+
 This mod provides a hub concept for sub games within a Minetest world.
 
 Designed to handle privileges, inventory, transport and rewards.

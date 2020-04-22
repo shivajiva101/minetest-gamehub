@@ -19,6 +19,7 @@ This file is part of gamehub.
 
 local ie = gamehub.ie
 local MP = minetest.get_modpath(minetest.get_current_modname())
+local WP = minetest.get_worldpath()
 
 -----------------------
 -- Helper Functions  --
@@ -45,7 +46,7 @@ local function handle_grant_command(caller, grant_name, grant_priv_str)
 	local privs = minetest.get_player_privs(grant_name)
 	local privs_unknown = ""
 	local basic_privs = minetest.string_to_privs(
-		minetest.setting_get("basic_privs") or "interact,shout")
+		minetest.settings:get("basic_privs") or "interact,shout")
 
 	if grant_priv_str == "all" then
 		grantprivs = minetest.registered_privileges
@@ -69,8 +70,8 @@ local function handle_grant_command(caller, grant_name, grant_priv_str)
 	if not gamehub.player[grant_name] then
 		gamehub.load_player(grant_name)
 		if gamehub.player[grant_name] then
-		  	gamehub.update_player_field(grant_name, "privs", privs)
-		  	gamehub.player[grant_name] = nil
+			gamehub.update_player_field(grant_name, "privs", privs)
+			gamehub.player[grant_name] = nil
 			minetest.log("action", caller..
 		    ' granted ('..grant_priv_str..
 		    ') privileges to '..grant_name)
@@ -122,7 +123,7 @@ local function handle_revoke_command(caller, revoke_name, revoke_priv_str)
 	local revoke_privs = minetest.string_to_privs(revoke_priv_str)
 	local privs = minetest.get_player_privs(revoke_name)
 	local basic_privs = minetest.string_to_privs(
-		minetest.setting_get("basic_privs") or "interact,shout")
+		minetest.settings:get("basic_privs") or "interact,shout")
 	for priv, _ in pairs(revoke_privs) do
 		if not basic_privs[priv] and
 				not minetest.check_player_privs(caller, {privs=true}) then
@@ -197,7 +198,7 @@ minetest.register_chatcommand("hub", {
 			return false, "Insufficient privs!"
 		end
 
-		local cmd, helper, list, param1, param2, player
+		local cmd, helper, list, param2, player
 
 		helper = [[Usage:
 		/hub add
@@ -511,7 +512,7 @@ minetest.register_chatcommand("hub", {
 				-- serialize metadata
 				local result, count = gamehub.serialize_meta(area.pos1, area.pos2)
 
-				local path = minetest.get_worldpath() .. "/schems"
+				local path = WP .. "/schems"
 				local filename = path .. "/" .. area.name .. ".we"
 				local file, err = ie.io.open(filename, "wb")
 
@@ -555,7 +556,7 @@ minetest.register_chatcommand("hub", {
 			elseif cmd == 'unstage' then
 
 				local num = tonumber(list[2])
-				local stages, data, fresh, msg, game
+				local stages, data, fresh, msg
 				local area, ctr = gamehub.area_at_pos(pos)
 				if area and ctr == 1 then
 					data = gamehub.game[area.name].data
@@ -623,10 +624,10 @@ minetest.register_chatcommand("info", {
 
 -- replace default revoke/grant privileges commands
 minetest.override_chatcommand("revoke", {
-  	params = "<name> (<privilege> | all)",
-  	description = "Remove privilege from player",
-  	privs = {privs=true},
-  	func = function(name, param)
+	params = "<name> (<privilege> | all)",
+	description = "Remove privilege from player",
+	privs = {privs=true},
+	func = function(name, param)
 		local revoke_name, revoke_priv_str = string.match(param, "([^ ]+) (.+)")
 		if not revoke_name or not revoke_priv_str then
 			return true, "Invalid parameters (see /help revoke)"
@@ -634,7 +635,7 @@ minetest.override_chatcommand("revoke", {
 			return true, "Player " .. revoke_name .. " does not exist."
 		end
 		return handle_revoke_command(name, revoke_name, revoke_priv_str)
-  	end,
+	end,
   }
 )
 

@@ -84,7 +84,7 @@ minetest.register_on_player_receive_fields(function(player, formname, fields)
 			tonumber(fields.shop_selling), tonumber(fields.shop_moq))
 		end
 		unified_inventory.set_inventory_formspec(player, "shop_manager") -- refresh
-		
+
 	end
 end)
 
