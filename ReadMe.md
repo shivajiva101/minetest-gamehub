@@ -97,7 +97,7 @@ so it's important to think about what you call the area, prior to building a gam
 
 3 files will be created in your worlds /schems folder which you can compress as a set to share with your friends and the community.
 ### Jail
-A simple but powerful mechanism is used to jail players and disable their functionality. The jail building is inserted in the bowels of the world, a fitting place for a player finding themselves on the wrong side of the server management team. To jail a player use the command:
+A simple but powerful mechanism is used to jail players and disable their functionality. The jail is inserted in the bowels of the world, a fitting place for a player finding themselves on the wrong side of the server management team. To jail a player use the command:
 
  ``/jail <player> <duration> <reason>``
 
@@ -105,7 +105,7 @@ A simple but powerful mechanism is used to jail players and disable their functi
 
  ``/jail Steve 1w trolling a staff member ``
 
- this would jail Steve for 1 week and will automatically expire. The hub_mod privilege is required before you can jail players.
+ would jail Steve for 1 week and automatically expire. The hub_mod privilege is required before you can jail players.
  To unjail a currently jailed player use the following command:
 
  ``/unjail <player>``
@@ -122,6 +122,4 @@ See individual credit.txt in the respective folders for further information.
 
 This modpack was inspired by running a Skyblock server and time spent playing with the code, friends who undoubtedly know who they are, plus all the Minetest developers & mod developers contributions that enabled it.
 ### Status
-Functional, not fully tested
-
-THIS MODPACK IS A WIP!
+Functional, fully tested.
