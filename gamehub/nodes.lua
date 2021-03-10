@@ -270,7 +270,7 @@ minetest.register_node("gamehub:egg", {
 		is_ground_content = false,
 		groups = {crumbly = 1, not_in_creative_inventory = 1},
 		drop = {},
-		sounds = default.node_sound_stone_defaults,
+		sounds = default.node_sound_stone_defaults(),
 })
 
 if minetest.get_modpath("moreblocks") then
